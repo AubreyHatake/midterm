@@ -14,6 +14,79 @@
         <li><a href="contact.html">Contact</a></li>
         <li><a href="order.html">Order</a></li>
         </ul>
-    <h2> This is where you order</h2>
+    <h1> Order now</h1>
+    <center>
+    <form>
+        <label for="sizes"> Choose a size: </label>
+        <input name="size" type="radio">
+        <label for="sm-size"> 14" </label>
+        <input name="size" type="radio">
+        <label for="md-size"> 16" </label>
+        <input name="size" type="radio">
+        <label for="lg-size"> 20" </label>
+        <input name="size" type="radio">
+        <label for="exlg-size"> 26" </label>
+    </form>
+    <div class="pizzaTops">
+        <img class="toppings" src="imgs/olives.jpg">
+        <img class="toppings" src="imgs/pepperoni.jpg">
+        <img class="toppings" src="imgs/pineapple.jpg"> 
+        <img class="toppings" src="imgs/feta.jpg">
+        <img class="toppings" src="imgs/bacon.jpg">
+        <img class="toppings" src="imgs/Spinach.jpg">
+        <img class="toppings" src="imgs/pickles.jpg">
+        <img class="toppings" src="imgs/green-peps.jpg">
+        <form>
+            <label for="toppings"> Chose toppings:</label>
+            <input name="toppings" type="checkbox">
+            <label for="olives"> Olives </label>
+            <input name="toppings" type="checkbox">
+            <label for="pepperoni"> Pepperoni </label>
+            <input name="toppings" type="checkbox">
+            <label for="pineapple"> Pineapple </label>
+            <input name="toppings" type="checkbox">
+            <label for="feta"> Feta </label>
+            <input name="toppings" type="checkbox">
+            <label for="bacon"> Bacon </label>
+            <input name="toppings" type="checkbox">
+            <label for="spinach"> Spinach </label>
+            <input name="toppings" type="checkbox">
+            <label for="pickles"> Pickles </label>
+            <input name="toppings" type="checkbox">
+            <label for="greenpep"> Green Peppers </label>
+        </form>
+    </div>
+    <div class="crust">
+        <form>
+            <label for="Crust"> Choose crust:</label>
+            <input name="crust" type="radio">
+            <label for="skinny"> Thin </label>
+            <input name="crust" type="radio">
+            <label for="not-skinny"> Regular</label>
+            <input name="crust" type="radio">
+            <label for="thick"> Thick Crust </label>
+            <input name="crust" type="radio">
+            <label for="stuffed"> Stuffed crust </label>
+        </form>
+    </div>
+   <div class="delievery">
+    <form>
+        <label for="address"> Enter delievery address:</label>
+      <input name="address" placeholder="Enter street address" type="text">
+      <input name="address" placeholder="City/Zip" type="text">
+      <input name="address" placeholder="State" type="text">
+      <!-- <input type="reset" value="clear" > 
+      <input type="submit" value="send" >  -->
+      <div class="delievery">
+      <label for="contact"> Enter contact information:</label>
+      <input name="mail" placeholder="Email address" type="text">
+      <input name="phone" placeholder="Phone Number" type="text">
+      <textarea name="messagee" placeholder="Special delievery instructions go here"></textarea>
+      <input type="reset" value="clear" > 
+      <input type="submit" value="send" > 
+    </div>
+    </form>
+   </div>
+</center>
 </body>
 </html>

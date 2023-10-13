@@ -138,5 +138,38 @@ input[type=text] {
     font-family: 'Cambria';
     font-size: large;
     color: black;
+    animation: Garfeild 1s;
 }
 
+@keyframes Garfeild {
+    from {bottom: 0px;}
+
+    to {bottom: 188px;}
+    
+}
+
+.delievery {
+    padding: 10px;
+}
+
+.toppings {
+    position: relative;
+    width: 6%;
+    top: 0;
+    left: 1%;
+    animation: toppings 2s;
+}
+
+@keyframes toppings {
+    from {left: -1000px;}
+    to {left: 0;}
+}
+
+.crust {
+    position: relative;
+    padding: 20px;
+}
+
+.pizzaTops {
+    padding: 10px;
+}
