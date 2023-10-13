@@ -31,9 +31,9 @@ ul {
 }
 
 .justPizza {
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
+    display: inline-block;
+    margin-left: 2%;
+    width: 20%;
 }
 
 .aboutContainer {
@@ -173,3 +173,30 @@ input[type=text] {
 .pizzaTops {
     padding: 10px;
 }
+
+input:required {
+background-color: #F6AA1C;
+} 
+
+.homeContainer {
+    position: relative;
+    text-align: center;
+    font-family: 'Cambria';
+    font-weight: bold;
+    font-size: 24px;
+    height: 20px;
+    left: 4%;
+}
+
+.celebpizza {
+    position: relative;
+    left: 84%;
+    width: 14%;
+}
+
+.left {
+    position: relative;
+    bottom: 580px;
+    z-index: -1;
+}
+
