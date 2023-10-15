@@ -39,33 +39,31 @@
         <img class="toppings" src="imgs/green-peps.jpg"> 
         </form>
         <form method="post" action="https://www.stonecoldprofessor.com/pizza-order.php">
-            <label for="toppings"> Chose toppings:</label>
+            <label for="topping[]"> Chose toppings:</label>
+            <input name="topping[]" type="checkbox">
             <label for="olives"> Olives </label>
-            <input name="toppings" type="checkbox">
+            <input name="topping[]" type="checkbox">
             <label for="pepperoni"> Pepperoni </label>
-            <input name="toppings" type="checkbox">
+            <input name="topping[]" type="checkbox">
             <label for="pineapple"> Pineapple </label>
-            <input name="toppings" type="checkbox">
+            <input name="topping[]" type="checkbox">
             <label for="feta"> Feta </label>
-            <input name="toppings" type="checkbox">
+            <input name="topping[]" type="checkbox">
             <label for="bacon"> Bacon </label>
-            <input name="toppings" type="checkbox">
+            <input name="topping[]" type="checkbox">
             <label for="spinach"> Spinach </label>
-            <input name="toppings" type="checkbox">
+            <input name="topping[]" type="checkbox">
             <label for="pickles"> Pickles </label>
-            <input name="toppings" type="checkbox">
+            <input name="topping[]" type="checkbox">
             <label for="greenpep"> Green Peppers </label>
         </form>
         <form class="crust" method="post" action="https://www.stonecoldprofessor.com/pizza-order.php">
             <label for="choose-crust"> Choose crust:</label>
-            <input name="crust" type="radio">
-            <label for="thin-crust"> Thin </label>
-            <input name="crust" type="radio">
-            <label for="Regular"> Regular</label>
-            <input name="crust" type="radio">
-            <label for="Thick"> Thick Crust </label>
-            <input name="crust" type="radio">
-            <label for="stuffed"> Stuffed crust </label>
+            <select name="crust" id="crust">
+            <option value="thin"> Thin </option>
+            <option value="Regular"> Regular</option>
+            <option value="Thick"> Thick Crust </option>
+            <option value="stuffed"> Stuffed crust </option>
         </form>
     <form class="delievery" method="post" action="https://www.stonecoldprofessor.com/pizza-order.php">
         <label for="address"> Enter delievery address:</label>
@@ -119,5 +117,8 @@
    </div>
 </form>
 </center>
+<div class="orderP">
+    <p class="ordering"> Order pizza here, it is the most amazing inspiring pizza you've ever had. We offer multiple toppings to be place a top of your pizza. Along with many crust sizes and pizza sizes. Be sure to add any special instructions to your very special order. </p>
+</div>
 </body>
 </html>

@@ -174,7 +174,7 @@ input[type=text] {
     padding: 10px;
 }
 
-input:required {
+input[name="add1"]:required {
 background-color: #F6AA1C;
 } 
 
@@ -200,3 +200,11 @@ background-color: #F6AA1C;
     z-index: -1;
 }
 
+.orderP {
+    position: relative;
+}
+
+.ordering {
+    text-align: center;
+    font-family: 'cambria';
+}
