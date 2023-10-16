@@ -156,26 +156,21 @@ input[type=text] {
 .toppings {
     position: relative;
     width: 6%;
-    top: 0;
-    left: 1%;
+    top: -18px;
+    left: -8%;
+    padding: 2px;
     animation: toppings 2s;
 }
 
 @keyframes toppings {
     from {left: -1000px;}
-    to {left: 0;}
+    to {left: -8%;}
 }
 
 .crust {
     position: relative;
     padding: 20px;
 }
-
-.pizzaTops {
-    padding: 10px;
-}
-
-
 
 .homeContainer {
     position: relative;
@@ -212,4 +207,10 @@ input[type=text] {
     position: relative;
     width: 20%;
     top: 1%;
+}
+
+.required::after {
+    content: "*";
+    color: #BC3908;
+    font-size: 20px;
 }

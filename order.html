@@ -28,34 +28,40 @@
         <input name="size" type="radio">
         <label for="exlg-size"> 26" </label>
     </form>
-        <form  class="pizzaTops">
-        <img class="toppings" src="imgs/olives.jpg" > 
-        <img class="toppings" src="imgs/pepperoni.jpg">
-        <img class="toppings" src="imgs/pineapple.jpg"> 
-        <img class="toppings" src="imgs/feta.jpg">
-        <img class="toppings" src="imgs/bacon.jpg">
-        <img class="toppings" src="imgs/Spinach.jpg">
-        <img class="toppings" src="imgs/pickles.jpg">
-        <img class="toppings" src="imgs/green-peps.jpg"> 
-        </form>
         <form method="post" action="https://www.stonecoldprofessor.com/pizza-order.php">
-            <label for="topping[]"> Chose toppings:</label>
-            <input name="topping[]" type="checkbox">
-            <label for="olives"> Olives </label>
-            <input name="topping[]" type="checkbox">
-            <label for="pepperoni"> Pepperoni </label>
-            <input name="topping[]" type="checkbox">
-            <label for="pineapple"> Pineapple </label>
-            <input name="topping[]" type="checkbox">
-            <label for="feta"> Feta </label>
-            <input name="topping[]" type="checkbox">
-            <label for="bacon"> Bacon </label>
-            <input name="topping[]" type="checkbox">
-            <label for="spinach"> Spinach </label>
-            <input name="topping[]" type="checkbox">
-            <label for="pickles"> Pickles </label>
-            <input name="topping[]" type="checkbox">
-            <label for="greenpep"> Green Peppers </label>
+            <label for="toppings[]"> Chose toppings:  </label>
+            <input name="toppings[olives]" type="checkbox" id="olives">
+            <label for="olives"> Olives 
+                <img class="toppings" src="imgs/olives.jpg" > 
+            </label>
+            <input name="toppings[pepperoni]" type="checkbox" id="pepperoni">
+            <label for="pepperoni"> Pepperoni
+                <img class="toppings" src="imgs/pepperoni.jpg">
+            </label>
+            <input name="toppings[pineapple]" type="checkbox" id="pineapple">
+            <label for="pineapple"> Pineapple
+                <img class="toppings" src="imgs/pineapple.jpg">
+            </label>
+            <input name="toppings[feta]" type="checkbox" id="feta">
+            <label for="feta"> Feta 
+                <img class="toppings" src="imgs/feta.jpg">
+            </label>
+            <input name="toppings[bacon]" type="checkbox" id="bacon">
+            <label for="bacon"> Bacon 
+                <img class="toppings" src="imgs/bacon.jpg">
+            </label>
+            <input name="toppings[spinach]" type="checkbox" id="spinach">
+            <label for="spinach"> Spinach 
+                <img class="toppings" src="imgs/Spinach.jpg">
+            </label>
+            <input name="toppings[pickles]" type="checkbox" id="pickles">
+            <label for="pickles"> Pickles 
+                <img class="toppings" src="imgs/pickles.jpg">
+            </label>
+            <input name="toppings[greenpeps]" type="checkbox" id="greenpep">
+            <label for="greenpep"> Green Peppers 
+                <img class="toppings" src="imgs/green-peps.jpg">
+            </label>
         </form>
         <form class="crust" method="post" action="https://www.stonecoldprofessor.com/pizza-order.php">
             <label for="choose-crust"> Choose crust:</label>
@@ -66,11 +72,12 @@
             <option value="stuffed"> Stuffed crust </option>
         </form>
     <form class="delievery" method="post" action="https://www.stonecoldprofessor.com/pizza-order.php">
-        <label for="address"> Enter delievery address:</label>
-      <input name="add1" placeholder="Enter street address" type="text">
+        <label class="required" for="address"> Enter delievery address:</label>
+      <input  name="add1" placeholder="Enter street address" type="text">
       <input name="city" placeholder="City/Zip" type="text">
-      <label for="State"> Choose a state:</label>
+      <label  class="required" for="State"> Choose a state:</label>
       <select id="state" name="state">
+        <option value=""> </option>
         <option value="Alabama">Alabama</option>
         <option value="Alaska">Alaska</option>
         <option value="Arizona">Arizona</option>
@@ -104,7 +111,7 @@
         <option value="Wyoming">Wyoming</option>
       </select>
       <div class="delievery">
-      <label for="names"> Enter name and contact here:</label>
+      <label class="required" for="names"> Enter name and contact here:</label>
         <input name="first" placeholder="first name" type="text">
         <input name="last" placeholder="last name" type="text">
       <input name="email" placeholder="Email address" type="text">
